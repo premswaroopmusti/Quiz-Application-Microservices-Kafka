@@ -1,12 +1,12 @@
 # Quiz Application – Microservices Architecture with Apache Kafka
 
-A Java Spring Boot Quiz Application that evolved from a monolithic application into a distributed microservices architecture and was further extended with Apache Kafka for asynchronous event-driven communication.
+A **Java Spring Boot Quiz Application** that evolved from a **monolithic application** into a **distributed microservices architecture** and was further extended with **Apache Kafka for asynchronous event-driven communication.**
 
-The application separates quiz management and question management into independent microservices. It uses Spring Cloud OpenFeign for synchronous inter-service communication, Netflix Eureka for service discovery, and Spring Cloud API Gateway as a common entry point.
+The application separates **quiz management** and **question management** into independent microservices. It uses **Spring Cloud OpenFeign** for synchronous inter-service communication, **Netflix Eureka** for service discovery, and **Spring Cloud API Gateway** as a common entry point.
 
-Apache Kafka is integrated to introduce asynchronous communication between Quiz Service and a newly developed Quiz History Service. Whenever a quiz is successfully completed, Quiz Service publishes a QuizCompletedEvent to Kafka. Quiz History Service consumes the event and independently stores the completed quiz details in PostgreSQL.
+**Apache Kafka** is integrated to introduce **asynchronous communication** between Quiz Service and a newly developed Quiz History Service. Whenever a quiz is successfully completed, Quiz Service publishes a QuizCompletedEvent to Kafka. Quiz History Service consumes the event and independently stores the completed quiz details in PostgreSQL.
 
-This project demonstrates both synchronous and asynchronous communication patterns in a Spring Boot microservices architecture.
+This project demonstrates both **synchronous** and **asynchronous communication** patterns in a Spring Boot microservices architecture.
 
 
 ## Table of Contents
@@ -443,7 +443,6 @@ It contains two configured routes:
 
 Quiz Service route
 ```
-
 /quiz-service/**
 ```
 
